@@ -1,0 +1,119 @@
+.header {
+    padding: 80px; /* some padding */
+    text-align: center; /* center the text */
+    background: #c09473; /*fundo do texto da header*/
+    color: #382a28; /* cor do texto da header*/
+  }
+  
+  /* Aumenta o tamanho da fonte do elemento <h1> */
+.header h1 {
+    font-size: 40px;
+  }
+
+.navbar {
+    overflow: hidden; /* Hide overflow */
+    background-color: #564238; /* fundo escuro da barra */
+  }
+  
+.navbar a {
+    float: right; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Right-aligned link */
+.navbar a.right {
+    float: left; /* Float a link to the right */
+  }
+  
+  /* Change color on hover/mouse-over */
+.navbar a:hover {
+    background-color: #ddd; /* Grey background color */
+    color: black; /* Black text color */
+  }
+/* Ensure proper sizing */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+.side {
+    flex: 30%; /* Set the width of the sidebar */
+    background-color: #f1f1f1; /* Grey background color */
+    padding: 20px; /* Some padding */
+  }
+  
+  /* Main column */
+.main {
+    flex: 70%; /* Set the width of the main content */
+    background-color: white; /* White background color */
+    padding: 20px; /* Some padding */
+  }
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+.footer {
+    padding: 20px; /* Some padding */
+    text-align: center; /* Center text*/
+    background: #ddd; /* Grey background */
+  }
+
+.side {
+    flex: 30%;
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center; /* Alinhar o conteúdo no centro */
+}
+
+.side img {
+    width: 50%; /* Ajuste a largura da imagem conforme necessário */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%; /* Se desejar uma borda circular para a imagem */
+}
+
+.progress-bar {
+    width: 200px;
+    height: 15px;
+    background-color: #b1a282;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0; /* centralizar */
+}
+
+.progress-fill {
+    height: 100%;
+    width: 20%;
+    background-color: 
+    #ad7757;
+    border-radius: 5px;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
