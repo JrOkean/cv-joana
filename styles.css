@@ -95,13 +95,13 @@
     border-radius: 10%; /* Se desejar uma borda circular para a imagem */
 }
 
-.progress-bar {
+/*.progress-bar {
     width: 200px;
     height: 15px;
     background-color: #b1a282;
     border-radius: 5px;
     overflow: hidden;
-    margin: 0; /* centralizar */
+    margin: 0;  centralizar 
 }
 
 .progress-fill {
@@ -110,6 +110,14 @@
     background-color: 
     #ad7757;
     border-radius: 5px;
+}*/
+
+#c {
+  font-size: 100%;
+  color: #be772b;
+  height: 30%;
+  width: 5%;
+  background-color: #ad7757;
 }
 
 p {
